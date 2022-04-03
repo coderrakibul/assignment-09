@@ -1,0 +1,16 @@
+.camera-text{
+    width:60%;
+}
+.camera-image{
+    width:40%;
+}
+.camera-text h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.camera-title-one{
+    color:black;
+}
+.camera-title-two{
+    color:blue;
+}
