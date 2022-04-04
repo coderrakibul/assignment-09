@@ -2,10 +2,14 @@ import React from 'react';
 import image from './image/dslr.jpg';
 import './Home.css';
 import useReview from '../../hooks/useReview';
+import { Link } from 'react-router-dom';
+import FirstThreeReview from '../FirstThreeReview/FirstThreeReview';
 
 
 const Home = () => {
-
+    const [reviews, setReviews] = useReview();
+    const firstThree = reviews.slice(0, 3);
+    console.log(firstThree);
     return (
      <div className='container mt-5'>
             <div className=' d-flex align-items-center justify-content-between'>
@@ -21,10 +25,19 @@ const Home = () => {
         </div>
 
         <div className='mt-5 text-center'>
-       
-            <h1>Customer Review</h1>
-       
-            <button className='btn btn-primary py-1 px-5 fw-bold fs-5'> See All Reviews</button>
+            <h1>Customer Review ({firstThree.length})</h1>
+          <div className='all-user mt-4'>
+          {
+              firstThree.map(threeReview => <FirstThreeReview 
+              key={threeReview.id}
+              threeReview={threeReview}
+
+              ></FirstThreeReview>)
+            }
+          </div>
+           <div className='mt-5 mb-5'>
+           <Link to="/review" className='btn btn-primary py-1 px-5 fw-bold fs-5'> See All Reviews</Link>
+           </div>
         </div>
      </div>
     );

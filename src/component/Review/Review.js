@@ -5,11 +5,10 @@ import './Review.css'
 
 const Review = () => {
     const [reviews, setReviews] = useReview();
-    console.log(reviews);
     return (
         <div className='container mt-5 mb-5'>
             <h2 className='text-center'>Customer Reviews ({reviews.length})</h2>
-           <div className='all-user'>
+           <div className='all-user mt-4'>
            {
              reviews.map(review => <SingleReview key={review.id}
             review={review}
