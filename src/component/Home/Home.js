@@ -1,9 +1,11 @@
 import React from 'react';
 import image from './image/dslr.jpg';
 import './Home.css';
+import useReview from '../../hooks/useReview';
 
 
 const Home = () => {
+
     return (
      <div className='container mt-5'>
             <div className=' d-flex align-items-center justify-content-between'>
@@ -19,7 +21,10 @@ const Home = () => {
         </div>
 
         <div className='mt-5 text-center'>
-        <h1>This is review section</h1>
+       
+            <h1>Customer Review</h1>
+       
+            <button className='btn btn-primary py-1 px-5 fw-bold fs-5'> See All Reviews</button>
         </div>
      </div>
     );
