@@ -1,10 +1,12 @@
 # Camera Corner
 
-Website live link [Create React App](https://camera-corner-rakibul.netlify.app/).
+Website live link [Camera Corner](https://camera-corner-rakibul.netlify.app/).
 
 ## About This Project
-* Here used react router
-* 
+* A complete project by React Router
+* Here used React bootstrap
+* Font Awsome Icon used
+* 404 page
 
 In the project directory, you can run:
 
