@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# Camera Corner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website live link [Create React App](https://camera-corner-rakibul.netlify.app/).
 
-## Available Scripts
+## About This Project
+* Here used react router
+* 
 
 In the project directory, you can run:
 
