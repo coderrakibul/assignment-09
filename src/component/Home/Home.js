@@ -5,7 +5,8 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className='container d-flex mt-5 align-items-center justify-content-between'>
+     <div className='container mt-5'>
+            <div className=' d-flex align-items-center justify-content-between'>
             <div className="camera-text">
                 <h1 className='camera-title-one'>Do Something</h1>
                 <h1 className='camera-title-two'>With Your gorgeous Camera</h1>
@@ -16,6 +17,11 @@ const Home = () => {
                 <img className='w-100' src={image} alt="" />
             </div>
         </div>
+
+        <div className='mt-5 text-center'>
+        <h1>This is review section</h1>
+        </div>
+     </div>
     );
 };
 

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Review = () => {
     return (
-        <div>
-            <h2>This is review page</h2>
+        <div className='container mt-5'>
+            <h2 className='text-center'>This is review page</h2>
         </div>
     );
 };

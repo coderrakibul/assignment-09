@@ -45,7 +45,7 @@ const Dashboard = () => {
 
     return (
         <div className='container d-flex mt-5'>
-            <div className='line-chart'>
+            <div className='w-50'>
                 <LineChart className='container line-chart' width={500} height={250} data={data}
                     margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -57,7 +57,7 @@ const Dashboard = () => {
                 </LineChart>
             </div>
 
-            <div>
+            <div className='w-50'>
                 <BarChart width={500} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey={"month"} />
